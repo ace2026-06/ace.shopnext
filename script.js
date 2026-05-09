@@ -2,9 +2,9 @@
 const products = [
     {
         name: "Cyberpunk Oversized Hoodie",
-        price: "₹1499",
+        price: "₹799",
         category: "Anime",
-        image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80",
+        image: "image/hoodies/purple.jpg",
         description: "Premium oversized anime hoodie with neon aesthetic.",
         whatsapp: "https://wa.me/917499272598",
         instagram: "https://instagram.com/ace.shopnext"
@@ -22,7 +22,7 @@ const products = [
         name: "Minimalist watch",
         price: "₹499",
         category: "Gadgets",
-        image: "image/watch.jpg",
+        image: "image/watches/blackthunder.png",
         description: "Sleek design, fitness tracking, and AMOLED display.",
         whatsapp: "https://wa.me/917499272598",
         instagram: "https://instagram.com/ace.shopnext"
