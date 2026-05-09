@@ -10,10 +10,10 @@ const products = [
         instagram: "https://instagram.com/ace.shopnext"
     },
     {
-        name: "Mechanical RGB Keyboard",
-        price: "₹3499",
+        name: "Mini Mechanical Keyboard Keychain ⌨️✨",
+        price: "₹499",
         category: "Gaming",
-        image: "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=500&q=80",
+        image: "image/figittoy/bothkey.jpg",
         description: "Tactile switches with customizable RGB lighting.",
         whatsapp: "https://wa.me/917499272598",
         instagram: "https://instagram.com/ace.shopnext"
@@ -98,7 +98,7 @@ function renderProducts(productArray) {
     productArray.forEach(product => {
         const card = document.createElement(
             product.name === "Cyberpunk Oversized Hoodie" ? "a" :
-            product.name === "Mechanical RGB Keyboard" ? "a" :
+            product.name === "Mini Mechanical Keyboard Keychain ⌨️✨" ? "a" :
             product.name === "Minimalist watch" ? "a" :
             product.name === "Streetwear Cargo Pants" ? "a" :
             product.name === "Titanium Ring" ? "a" :
@@ -106,7 +106,7 @@ function renderProducts(productArray) {
         );
         if (product.name === "Cyberpunk Oversized Hoodie") {
             card.href = "hoodie.html";
-        } else if (product.name === "Mechanical RGB Keyboard") {
+        } else if (product.name === "Mini Mechanical Keyboard Keychain ⌨️✨") {
             card.href = "keyboard.html";
         } else if (product.name === "Minimalist watch") {
             card.href = "watch.html";

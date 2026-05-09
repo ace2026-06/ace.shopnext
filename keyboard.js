@@ -45,7 +45,7 @@ accordionHeaders.forEach(header => {
 
 // 4. Dynamic WhatsApp Link Generator
 function updateWhatsAppLink() {
-    const productName = "Mechanical RGB Keyboard";
+    const productName = "Mini Mechanical Keyboard Keychain";
     const qty = document.getElementById('qty').value;
     
     // Format the message
