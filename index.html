@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace.shopnext | Premium Futuristic Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass sticky">
+        <div class="logo">Ace<span>.shopnext</span></div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <i class="fas fa-search"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content glass">
+            <h1>Welcome to the Future of Shopping</h1>
+            <p>Discover premium fashion, anime merch, gaming gear, and gadgets curated for the bold.</p>
+            <a href="#shop" class="btn btn-glow">Explore Catalog</a>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="cat-card glass" onclick="filterCategory('Fashion')"><i class="fas fa-tshirt"></i><p>Fashion</p></div>
+            <div class="cat-card glass" onclick="filterCategory('Gaming')"><i class="fas fa-gamepad"></i><p>Gaming</p></div>
+            <div class="cat-card glass" onclick="filterCategory('Anime')"><i class="fas fa-dragon"></i><p>Anime Merch</p></div>
+            <div class="cat-card glass" onclick="filterCategory('Accessories')"><i class="fas fa-glasses"></i><p>Accessories</p></div>
+            <div class="cat-card glass" onclick="filterCategory('Gadgets')"><i class="fas fa-laptop"></i><p>Gadgets</p></div>
+        </div>
+    </section>
+
+    <!-- Main Shop Section -->
+    <section id="shop" class="shop">
+        <h2>Our Catalog</h2>
+        
+        <!-- Filters -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="Fashion">Fashion</button>
+            <button class="filter-btn" data-filter="Gaming">Gaming</button>
+            <button class="filter-btn" data-filter="Anime">Anime</button>
+            <button class="filter-btn" data-filter="Accessories">Accessories</button>
+            <button class="filter-btn" data-filter="Gadgets">Gadgets</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Products injected by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="review-grid">
+            <div class="review-card glass">
+                <i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i>
+                <p>"The anime hoodies are insane! Quality is top tier and delivery was super fast."</p>
+                <h4>- Rahul S.</h4>
+            </div>
+            <div class="review-card glass">
+                <i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i><i class="fas fa-star neon-text"></i>
+                <p>"Best gadget store I've found on Instagram. The glassmorphism aesthetics matches their premium tech."</p>
+                <h4>- Priya M.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item glass">
+                <div class="faq-question">How do I place an order? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Click on the "WhatsApp Buy" button on any product to send us a direct message with the product details. We'll assist you from there!</div>
+            </div>
+            <div class="faq-item glass">
+                <div class="faq-question">Do you ship worldwide? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Currently, we ship all across India. International shipping is coming soon.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Ace<span>.shopnext</span></h2>
+                <p>The premium destination for modern aesthetics.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <a href="https://instagram.com/ace.shopnext" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://wa.me/917499272598" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:ayushforzorin@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ace.shopnext. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917499272598" class="floating-btn whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="floating-btn top-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

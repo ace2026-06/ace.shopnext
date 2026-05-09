@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetwear Cargo Pants | Ace.shopnext</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar glass sticky">
+        <a href="index.html" style="text-decoration: none;"><div class="logo">Ace<span>.shopnext</span></div></a>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#shop">Shop</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details-container">
+        
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+            <div class="main-image-container glass">
+                <img id="mainImage" src="https://images.unsplash.com/photo-1516826957135-700ede19c6ce?auto=format&fit=crop&w=500&q=80" alt="Streetwear Cargo Pants Main">
+            </div>
+            <div class="thumbnail-row">
+                <img src="https://images.unsplash.com/photo-1516826957135-700ede19c6ce?auto=format&fit=crop&w=500&q=80" class="thumb active-thumb" onclick="changeImage(this)" alt="Thumb 1">
+                <img src="https://images.unsplash.com/photo-1516826957135-700ede19c6ce?auto=format&fit=crop&w=500&q=80" class="thumb" onclick="changeImage(this)" alt="Thumb 2">
+                <img src="https://images.unsplash.com/photo-1516826957135-700ede19c6ce?auto=format&fit=crop&w=500&q=80" class="thumb" onclick="changeImage(this)" alt="Thumb 3">
+            </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="product-info">
+            <span class="category-tag-static">Fashion</span>
+            <h1 class="product-title-large">Streetwear Cargo Pants</h1>
+            
+            <div class="product-rating">
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star-half-alt neon-text"></i>
+                <span>(4.5/5 from 70 reviews)</span>
+            </div>
+
+            <h2 class="product-price-large">₹1299</h2>
+            
+            <p class="product-description-long">
+                Techwear inspired cargo pants with multiple pockets. Perfect for urban exploration with a sleek, functional design that combines style and practicality.
+            </p>
+
+            <!-- Size Selector -->
+            <div class="options-container">
+                <h3>Select Size:</h3>
+                <div class="size-options">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn active">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+            </div>
+
+            <!-- Quantity & Actions -->
+            <div class="action-container">
+                <div class="quantity-selector glass">
+                    <button onclick="changeQuantity(-1)"><i class="fas fa-minus"></i></button>
+                    <input type="text" id="qty" value="1" readonly>
+                    <button onclick="changeQuantity(1)"><i class="fas fa-plus"></i></button>
+                </div>
+                
+                <a href="#" id="buyNowBtn" class="btn btn-glow btn-large">
+                    <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                </a>
+            </div>
+
+            <!-- Accordion Details -->
+            <div class="product-accordion">
+                <div class="accordion-item glass">
+                    <button class="accordion-header">Product Details <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Multiple utility pockets</li>
+                            <li>Techwear design</li>
+                            <li>Comfortable fit</li>
+                            <li>Durable fabric</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item glass">
+                    <button class="accordion-header">Shipping & Returns <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Free standard shipping across India (3-5 business days). 7-day hassle-free return policy if tags are attached.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="pants.js"></script>
+</body>
+</html>
