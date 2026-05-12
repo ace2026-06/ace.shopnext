@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Octopus Soft Toy | Ace.shopnext</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation (Same as index.html) -->
+    <nav class="navbar glass sticky">
+        <a href="index.html" style="text-decoration: none;"><div class="logo">Ace<span>.shopnext</span></div></a>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#shop">Shop</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details-container">
+        
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+            <div class="main-image-container glass">
+                <img id="mainImage" src="image/Soft toys/Angryoctopus/op1.jpg" alt="Angry Octopus Soft Toy Main">
+            </div>
+            <div class="thumbnail-row">
+                <img src="image/Soft toys/Angryoctopus/op1.jpg" class="thumb active-thumb" onclick="changeImage(this)" alt="Angry Octopus 1">
+                <img src="image/Soft toys/Angryoctopus/op2.jpg" class="thumb" onclick="changeImage(this)" alt="Angry Octopus 2">
+                <img src="image/Soft toys/Angryoctopus/op3.jpg" class="thumb" onclick="changeImage(this)" alt="Angry Octopus 3">
+                <img src="image/Soft toys/Angryoctopus/op4.jpg" class="thumb" onclick="changeImage(this)" alt="Angry Octopus 4">
+            </div>
+        </div>
+
+        <!-- Right: Product Info -->
+        <div class="product-info">
+            <span class="category-tag-static">Anime Merch</span>
+            <h1 class="product-title-large">Angry Octopus Soft Toy</h1>
+            
+            <div class="product-rating">
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star neon-text"></i>
+                <i class="fas fa-star-half-alt neon-text"></i>
+                <span>(4.7/5 from 85 reviews)</span>
+            </div>
+
+            <h2 class="product-price-large">₹599 <span class="original-price">₹899</span></h2>
+            
+            <p class="product-description-long">
+                Meet our adorable Angry Octopus Soft Toy! This plush octopus features a cute angry expression that's sure to bring a smile to any anime fan's face. Made from high-quality, soft materials, it's perfect for cuddling, collecting, or as a unique gift.
+            </p>
+            
+            <!-- Quantity & Actions -->
+            <div class="action-container">
+                <div class="quantity-selector glass">
+                    <button onclick="changeQuantity(-1)"><i class="fas fa-minus"></i></button>
+                    <input type="text" id="qty" value="1" readonly>
+                    <button onclick="changeQuantity(1)"><i class="fas fa-plus"></i></button>
+                </div>
+                
+                <a href="#" id="buyNowBtn" class="btn btn-glow btn-large">
+                    <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                </a>
+            </div>
+
+            <!-- Accordion Details -->
+            <div class="product-accordion">
+                <div class="accordion-item glass">
+                    <button class="accordion-header">Product Details <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Premium Plush Material</li>
+                            <li>Handcrafted Design</li>
+                            <li>Perfect for Anime Collectors</li>
+                            <li>Safe for All Ages</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item glass">
+                    <button class="accordion-header">Shipping & Returns <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Free standard shipping across India (3-5 business days). 7-day hassle-free return policy if tags are attached.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="angryoctopus.js"></script>
+</body>
+</html>

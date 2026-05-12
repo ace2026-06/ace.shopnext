@@ -1,7 +1,7 @@
 // 1. Data Structure for Products
 const products = [
     {
-        name: "Cyberpunk Oversized Hoodie",
+        name: "Solid Oversized Hoodie",
         price: "₹799",
         category: "Anime",
         image: "image/hoodies/purple.jpg",
@@ -28,24 +28,6 @@ const products = [
         instagram: "https://instagram.com/ace.shopnext"
     },
     {
-        name: "Streetwear Cargo Pants",
-        price: "₹1299",
-        category: "Fashion",
-        image: "https://images.unsplash.com/photo-1516826957135-700ede19c6ce?auto=format&fit=crop&w=500&q=80",
-        description: "Techwear inspired cargo pants with multiple pockets.",
-        whatsapp: "https://wa.me/917499272598",
-        instagram: "https://instagram.com/ace.shopnext"
-    },
-    {
-        name: "Titanium Ring",
-        price: "₹599",
-        category: "Accessories",
-        image: "https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&w=500&q=80",
-        description: "Matte black titanium ring. Waterproof and durable.",
-        whatsapp: "https://wa.me/917499272598",
-        instagram: "https://instagram.com/ace.shopnext"
-    },
-    {
         name: "Wireless ANC Earbuds",
         price: "₹1999",
         category: "Gadgets",
@@ -54,21 +36,57 @@ const products = [
         whatsapp: "https://wa.me/917499272598",
         instagram: "https://instagram.com/ace.shopnext"
     },
-    {
-        name: "demo",
-        price: "₹0",
-        category: "none",
-        image: "image/demo.jpg",
-        description: "not fro sale",
+        {
+        name: "Angry Octopus Soft Toy",
+        price: "₹599",
+        category: "Anime",
+        image: "image/Soft toys/Angryoctopus/op1.jpg",
+        description: "Cute and cuddly angry octopus plush toy, perfect for anime fans.",
         whatsapp: "https://wa.me/917499272598",
         instagram: "https://instagram.com/ace.shopnext"
     },
     {
-        name: "demo",
+        name: "Pouch Bunny Soft Toy",
+        price: "₹599",
+        category: "Anime",
+        image: "image/Soft toys/Pouchbunny/pb1.jpg",
+        description: "Adorable pouch bunny plush toy, soft and huggable.",
+        whatsapp: "https://wa.me/917499272598",
+        instagram: "https://instagram.com/ace.shopnext"
+    },
+    {
+        name: "demo product",
         price: "₹0",
         category: "none",
         image: "image/demo.jpg",
-        description: "not fro sale",
+        description: "Placeholder demo product, not for sale.",
+        whatsapp: "https://wa.me/917499272598",
+        instagram: "https://instagram.com/ace.shopnext"
+    },
+    {
+        name: "demo product",
+        price: "₹0",
+        category: "none",
+        image: "image/demo.jpg",
+        description: "Placeholder demo product, not for sale.",
+        whatsapp: "https://wa.me/917499272598",
+        instagram: "https://instagram.com/ace.shopnext"
+    },
+    {
+        name: "demo product",
+        price: "₹0",
+        category: "none",
+        image: "image/demo.jpg",
+        description: "Placeholder demo product, not for sale.",
+        whatsapp: "https://wa.me/917499272598",
+        instagram: "https://instagram.com/ace.shopnext"
+    },
+    {
+        name: "demo product",
+        price: "₹0",
+        category: "none",
+        image: "image/demo.jpg",
+        description: "Placeholder demo product, not for sale.",
         whatsapp: "https://wa.me/917499272598",
         instagram: "https://instagram.com/ace.shopnext"
     }
@@ -97,14 +115,16 @@ function renderProducts(productArray) {
     
     productArray.forEach(product => {
         const card = document.createElement(
-            product.name === "Cyberpunk Oversized Hoodie" ? "a" :
+            product.name === "Solid Oversized Hoodie" ? "a" :
             product.name === "Mini Mechanical Keyboard Keychain ⌨️✨" ? "a" :
             product.name === "Minimalist watch" ? "a" :
             product.name === "Streetwear Cargo Pants" ? "a" :
             product.name === "Titanium Ring" ? "a" :
-            product.name === "Wireless ANC Earbuds" ? "a" : "div"
+            product.name === "Wireless ANC Earbuds" ? "a" :
+            product.name === "Angry Octopus Soft Toy" ? "a" :
+            product.name === "Pouch Bunny Soft Toy" ? "a" : "div"
         );
-        if (product.name === "Cyberpunk Oversized Hoodie") {
+        if (product.name === "Solid Oversized Hoodie") {
             card.href = "hoodie.html";
         } else if (product.name === "Mini Mechanical Keyboard Keychain ⌨️✨") {
             card.href = "keyboard.html";
@@ -116,6 +136,10 @@ function renderProducts(productArray) {
             card.href = "ring.html";
         } else if (product.name === "Wireless ANC Earbuds") {
             card.href = "earbuds.html";
+        } else if (product.name === "Angry Octopus Soft Toy") {
+            card.href = "angryoctopus.html";
+        } else if (product.name === "Pouch Bunny Soft Toy") {
+            card.href = "pouchbunny.html";
         }
         const productLink = card.href || window.location.href;
         const waText = encodeURIComponent(`Hi! I want to order: ${product.name}\nProduct link: ${productLink}`);
@@ -145,8 +169,8 @@ function renderTrending(productArray) {
     slider.innerHTML = "";
     // Grab first 4 items as "Trending"
     productArray.slice(0, 4).forEach(product => {
-        const slide = document.createElement(product.name === "Cyberpunk Oversized Hoodie" ? "a" : "div");
-        if (product.name === "Cyberpunk Oversized Hoodie") {
+        const slide = document.createElement(product.name === "Solid Oversized Hoodie" ? "a" : "div");
+        if (product.name === "Solid Oversized Hoodie") {
             slide.href = "hoodie.html";
         }
         slide.className = "product-card glass";
